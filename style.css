@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  width: 100%;
+
+  --main-colour: white;
+  --secondary-colour: orange;
+  --tertiary-colour: #4FBCCD;
+
+  font-family: 'just_sansregular';
+}
+@font-face {
+    font-family: 'just_sansregular';
+    src: url('Resources/webfontkit-20230315-212755/just_sans_regular-        webfont.woff2') format('woff2'),
+         url('Resources/webfontkit-20230315-212755/just_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* styles */
+body
+{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  background-color:#232c3b;
+  color: var(--main-colour);
+}
+h1
+{
+  font-size: 250%;
+}
+#last-name{
+  color: var(--secondary-colour);
+}
+h2
+{
+  color: var(--secondary-colour);
+}
+h3
+{
+  color: var(--tertiary-colour);
+}
+/*specfic section styling */
+#about-me-text
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+footer
+{
+  padding: 10px;
+}
+/*classes*/
+li
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projectSC
+{
+  height : auto;
+  width : auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+.link-text
+{
+  color : var(--tertiary-colour);
+}
+.link-text:hover
+{
+  animation-name: color;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+/*animations*/
+@keyframes color{
+  100%{
+    color: var(--secondary-colour);
+  }
+}
+
+
+
